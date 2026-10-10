@@ -1,0 +1,32 @@
+{
+  "name": "slaptain-ldapcon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slidev deck: slaptain — A Kubernetes Operator for Multi-Site Multi-Master OpenLDAP (LDAPCon talk)",
+  "author": "Dominik Epple",
+  "license": "CC-BY-4.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "slidev slides.md --open",
+    "build": "slidev build slides.md",
+    "check": "./scripts/check-build.sh",
+    "portable": "SLIDEV_PORTABLE=1 slidev build slides.md --base ./ --out dist-single",
+    "pdf": "slidev export slides.md --output $npm_package_name.pdf",
+    "pdf-clicks": "slidev export slides.md --with-clicks --output $npm_package_name.pdf",
+    "pptx": "slidev export slides.md --format pptx --output $npm_package_name.pptx",
+    "flashdrive": "./scripts/flashdrive.sh"
+  },
+  "dependencies": {
+    "@fontsource/fira-code": "^5.2.7",
+    "@fontsource/inter": "^5.2.8",
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-default": "^0.25.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.60.0",
+    "vite-plugin-singlefile": "^2.3.3"
+  },
+  "allowScripts": {
+    "playwright-chromium@1.63.0": true
+  }
+}

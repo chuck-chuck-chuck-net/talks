@@ -1,0 +1,18 @@
+node_modules/
+
+# Build outputs
+dist/
+dist-single/
+dist-check*/
+.slidev/
+flashdrive/
+*.pdf
+*.pptx
+
+# Credentials — never commit
+*.secret
+clouds.yaml
+secure.yaml
+
+# The published PDF of each talk is committed on purpose: one line per talk
+!/2026-ldapcon-slaptain/LDAPCON-2026-Dominik-Epple-slaptain-A-Kubernetes-Operator-for-Multi-Site-Multi-Master-OpenLDAP.pdf
